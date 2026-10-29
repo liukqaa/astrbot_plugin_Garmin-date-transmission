@@ -4,5 +4,5 @@ short_desc: 用佳明官方 Personal API 查训练与健康数据，支持每日
 desc: 通过 Garmin Connect 官方 Personal API Key（支持中国大陆站 personal.connectapi.garmin.cn 与国际站），以只读方式查询佳明手表同步到云端的训练活动、配速与心率区间、身体成分、睡眠、心率、HRV 等数据；可配置每日训练恢复推送与每周训练周报，供 AstrBot 中的 AI 分析与回答。
 version: 1.2.0
 author: gunit
-repo: ""
+repo: "https://github.com/liukqaa/Garmin-date-transmission"
 astrbot_version: ">=4.0.0,<5"

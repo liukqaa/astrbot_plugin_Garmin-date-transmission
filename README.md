@@ -43,7 +43,7 @@
 
 ```bash
 cd AstrBot/data/plugins
-git clone https://github.com/<your-name>/Garmin-date-transmission.git astrbot_plugin_garmin
+git clone https://github.com/liukqaa/Garmin-date-transmission.git astrbot_plugin_garmin
 ```
 
 依赖：`httpx`、`docstring-parser`（见 `requirements.txt`，AstrBot 自带 httpx 0.28+）。
