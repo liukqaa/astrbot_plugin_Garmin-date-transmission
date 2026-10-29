@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "display_name": "Garmin Training & Health",
+    "short_desc": "Garmin training and health data via the official Personal API, with daily push and weekly report",
+    "desc": "Read-only access to Garmin Connect (official Personal API, China and International): activities, pace and heart-rate zones, body composition, sleep, heart rate and HRV, plus optional daily training/recovery push and weekly training report."
+  },
+  "config": {
+    "api_key": {
+      "description": "Garmin Personal API Key",
+      "hint": "Create it at connect.garmin.cn (or connect.garmin.com) → Settings → Personal API Key. It is shown only once and expires after 30/90/180 days or 1 year."
+    },
+    "region": {
+      "description": "Account region",
+      "labels": [
+        "China (garmin.cn)",
+        "International (garmin.com)"
+      ],
+      "subtitles": [
+        "Uses personal.connectapi.garmin.cn for connect.garmin.cn accounts",
+        "Uses personal.connectapi.garmin.com for connect.garmin.com accounts"
+      ]
+    },
+    "push_enabled": {
+      "description": "Enable daily training and recovery push",
+      "hint": "Sends yesterday's training plus this morning's sleep, HRV and resting heart rate, with a training suggestion."
+    },
+    "push_time": {
+      "description": "Daily push time",
+      "hint": "24-hour HH:MM, e.g. 08:00, in the AstrBot host's local time."
+    },
+    "weekly_enabled": {
+      "description": "Enable weekly training report",
+      "hint": "Pushes weekly volume, pace, heart-rate zone structure, sleep and HRV summary."
+    },
+    "weekly_weekday": {
+      "description": "Weekly report weekday",
+      "hint": "1=Monday, 7=Sunday."
+    },
+    "weekly_time": {
+      "description": "Weekly report time",
+      "hint": "24-hour HH:MM, e.g. 08:30."
+    },
+    "push_umo": {
+      "description": "Target session (umo)",
+      "hint": "Format: platform_id:message_type:session_id, e.g. aiocqhttp:FriendMessage:123456789."
+    }
+  }
+}

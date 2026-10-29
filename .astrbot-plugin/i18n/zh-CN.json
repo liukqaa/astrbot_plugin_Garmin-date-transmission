@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "display_name": "佳明训练与身体状况数据",
+    "short_desc": "用佳明官方 Personal API 查训练与健康数据，支持每日推送与周报",
+    "desc": "通过 Garmin Connect 官方 Personal API Key（支持中国大陆站与国际站），以只读方式查询佳明手表同步到云端的训练活动、配速与心率区间、身体成分、睡眠、心率、HRV 等数据；可配置每日训练恢复推送与每周训练周报。"
+  },
+  "config": {
+    "api_key": {
+      "description": "佳明 Personal API Key",
+      "hint": "在 connect.garmin.cn（或 connect.garmin.com）登录后进入 设置 → Personal API Key 创建，只显示一次。可选有效期 30/90/180 天或 1 年，过期需重新生成。"
+    },
+    "region": {
+      "description": "账号区域",
+      "labels": [
+        "中国大陆站",
+        "国际站"
+      ],
+      "subtitles": [
+        "使用 personal.connectapi.garmin.cn，适用于 connect.garmin.cn 账号",
+        "使用 personal.connectapi.garmin.com，适用于 connect.garmin.com 账号"
+      ]
+    },
+    "push_enabled": {
+      "description": "开启每日训练与恢复推送",
+      "hint": "每天定时把「昨天训练 + 今晨睡眠/HRV/静息心率 + 今日建议」主动发到指定会话。"
+    },
+    "push_time": {
+      "description": "每日推送时间",
+      "hint": "24 小时制 HH:MM，例如 08:00。使用运行 AstrBot 的主机本地时间。"
+    },
+    "weekly_enabled": {
+      "description": "开启每周训练周报",
+      "hint": "每周固定一天推送跑量、配速、心率区间、睡眠与 HRV 汇总。"
+    },
+    "weekly_weekday": {
+      "description": "周报推送星期",
+      "hint": "1=周一，7=周日。"
+    },
+    "weekly_time": {
+      "description": "周报推送时间",
+      "hint": "24 小时制 HH:MM，例如 08:30。"
+    },
+    "push_umo": {
+      "description": "推送目标会话（umo）",
+      "hint": "格式如 platform_id:message_type:session_id，例如 aiocqhttp:FriendMessage:123456789。"
+    }
+  }
+}
